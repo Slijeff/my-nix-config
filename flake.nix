@@ -6,10 +6,6 @@
     nix-darwin.url = "github:LnL7/nix-darwin";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
     nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
-    # homebrew-cask = {
-    #   url = "github:homebrew/homebrew-cask";
-    #   flake = false;
-    # };
   };
 
   outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew }:
@@ -30,6 +26,7 @@
             pnpm
             devbox
             fzf
+            direnv
           ];
         fonts.packages = with pkgs;
           [
@@ -86,6 +83,9 @@
             "visual-studio-code"
             "zoom"
           ];
+          masApps = {
+            xnip = 1221250572;
+          };
           onActivation = {
             autoUpdate = true;
             upgrade = true;
