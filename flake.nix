@@ -31,10 +31,14 @@
             devbox
             fzf
           ];
+        fonts.packages = with pkgs;
+          [
+            intel-one-mono
+          ];
 
         # Auto upgrade nix package and the daemon service.
         services.nix-daemon.enable = true;
-        # nix.package = pkgs.nix;
+        nix.package = pkgs.nix;
 
         # Create /etc/zshrc that loads the nix-darwin environment.
         programs.zsh.enable = true; # default shell on catalina
@@ -57,7 +61,10 @@
           dock.autohide = true;
           dock.mru-spaces = false;
           finder.AppleShowAllExtensions = true;
+          finder.AppleShowAllFiles = true;
+          finder.ShowPathbar = true;
           finder.FXPreferredViewStyle = "clmv";
+          finder._FXShowPosixPathInTitle = true;
           loginwindow.LoginwindowText = "Welcome Back";
           screensaver.askForPasswordDelay = 10;
         };
@@ -79,10 +86,10 @@
             "visual-studio-code"
             "zoom"
           ];
-          onActivation.cleanup = "zap";
           onActivation = {
             autoUpdate = true;
             upgrade = true;
+            cleanup = "zap";
           };
         };
 
@@ -90,6 +97,10 @@
           settings = {
             auto-optimise-store = true;
             experimental-features = "nix-command flakes";
+          };
+          gc = {
+            automatic = true;
+            options = "--delete-older-than 7d";
           };
         };
       };
