@@ -26,7 +26,6 @@
             pnpm
             devbox
             fzf
-            direnv
           ];
         fonts.packages = with pkgs;
           [
@@ -82,6 +81,7 @@
             "maccy"
             "visual-studio-code"
             "zoom"
+            "slack"
           ];
           masApps = {
             xnip = 1221250572;
