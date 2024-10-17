@@ -26,6 +26,7 @@
             pnpm
             devbox
             fzf
+            just
           ];
         fonts.packages = with pkgs;
           [
@@ -70,7 +71,9 @@
           brews = [
           ];
           casks = [
+            "mac-mouse-fix"
             "wechat"
+            "docker"
             "notion"
             "wezterm"
             "google-chrome"
