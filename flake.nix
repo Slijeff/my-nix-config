@@ -76,7 +76,6 @@
             "mac-mouse-fix"
             "steam"
             "wechat"
-            "docker"
             "notion"
             "wezterm"
             "google-chrome"
