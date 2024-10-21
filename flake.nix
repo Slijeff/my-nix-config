@@ -27,6 +27,7 @@
             devbox
             fzf
             just
+            gdu
           ];
         fonts.packages = with pkgs;
           [
@@ -69,9 +70,11 @@
         homebrew = {
           enable = true;
           brews = [
+            "libomp"
           ];
           casks = [
             "mac-mouse-fix"
+            "steam"
             "wechat"
             "docker"
             "notion"
