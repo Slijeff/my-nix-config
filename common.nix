@@ -1,5 +1,3 @@
-# home.nix
-
 { config, pkgs, ... }:
 
 {
@@ -51,7 +49,7 @@
   programs.zsh = {
     enable = true;
     shellAliases = {
-        switch = "darwin-rebuild switch --flake ~/nix-darwin-config/";
+        switch = "darwin-rebuild switch --flake ~/nix-config/";
         ll = "ls -la";
     };
     enableCompletion = true;
