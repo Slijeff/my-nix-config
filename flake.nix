@@ -140,7 +140,7 @@
 
         # Specify your home configuration modules here, for example,
         # the path to your home.nix.
-        modules = [ ./vim-jhui8.nix ];
+        modules = [ ./vm-jhui8.nix ];
 
         # Optionally use extraSpecialArgs
         # to pass through arguments to home.nix
