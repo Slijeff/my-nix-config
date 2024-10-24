@@ -13,6 +13,9 @@
   outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, home-manager, ... }:
     {
       darwinConfigurations."Andromeda" = nix-darwin.lib.darwinSystem {
+        specialArgs = {
+          inherit inputs;
+        };
         modules = [
           ./nix-darwin/mac-slijeff.nix
           nix-homebrew.darwinModules.nix-homebrew
@@ -35,7 +38,7 @@
         ];
       };
 
-      #  cs527 vm
+      #  cs527 vm, using standalone home-manager
       homeConfigurations."jhui8" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         modules = [ ./home-manager/vm-jhui8.nix ];

@@ -1,5 +1,5 @@
 # common config for all Macs
-{ pkgs, ... }: {
+{ pkgs, inputs, ... }: {
   environment.systemPackages = with pkgs;
     [
 
@@ -20,6 +20,7 @@
   # Used for backwards compatibility, please read the changelog before changing.
   # $ darwin-rebuild changelog
   system.stateVersion = 5;
+  system.configurationRevision = inputs.self.rev or inputs.self.dirtyRev or null;
 
   # The platform the configuration will be used on.
   nixpkgs.hostPlatform = "aarch64-darwin";
