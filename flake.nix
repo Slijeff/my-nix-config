@@ -17,19 +17,7 @@
         # $ nix-env -qaP | grep wget
         environment.systemPackages = with pkgs;
           [
-            vim
-            neovim
-            zoxide
-            btop
-            uv
-            fastfetch
-            lazygit
-            wget
-            pnpm
-            devbox
-            fzf
-            just
-            gdu
+            
           ];
         fonts.packages = with pkgs;
           [
@@ -56,6 +44,8 @@
 
         # Allow fingerprint for password
         security.pam.enableSudoTouchIdAuth = true;
+
+        users.users.slijeff.home = "/Users/slijeff";
 
         system.defaults = {
           dock.autohide = true;
@@ -138,6 +128,7 @@
           home-manager.darwinModules.home-manager {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
+            home-manager.backupFileExtension = "backup";
             home-manager.users.slijeff = import ./home.nix;
           }
         ];
