@@ -1,5 +1,5 @@
 {
-  description = "Slijeff's Darwin system flake";
+  description = "Slijeff's flake";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
@@ -17,7 +17,7 @@
         # $ nix-env -qaP | grep wget
         environment.systemPackages = with pkgs;
           [
-            
+
           ];
         fonts.packages = with pkgs;
           [
@@ -125,7 +125,8 @@
 
             };
           }
-          home-manager.darwinModules.home-manager {
+          home-manager.darwinModules.home-manager
+          {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.backupFileExtension = "backup";
@@ -134,16 +135,10 @@
         ];
       };
 
-      # other linux machine
+      #  cs527 vm
       homeConfigurations."jhui8" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
-
-        # Specify your home configuration modules here, for example,
-        # the path to your home.nix.
         modules = [ ./vm-jhui8.nix ];
-
-        # Optionally use extraSpecialArgs
-        # to pass through arguments to home.nix
       };
 
       # Expose the package set, including overlays, for convenience.

@@ -49,28 +49,21 @@
   programs.zsh = {
     enable = true;
     shellAliases = {
-        switch = "darwin-rebuild switch --flake ~/nix-config/";
-        ll = "ls -la";
+      switch = "darwin-rebuild switch --flake ~/nix-config/";
+      ll = "ls -la";
     };
     enableCompletion = true;
     autosuggestion = {
-        enable = true;
+      enable = true;
     };
     oh-my-zsh = {
-        enable = true;
-        theme = "cloud";        
+      enable = true;
+      theme = "cloud";
     };
   };
 
   programs.zoxide = {
     enable = true;
-    enableZshIntegration = true;
-  };
-
-  programs.wezterm = {
-    enable = true;
-    # do not install since it's installed by homebrew
-    package = pkgs.emptyDirectory; 
     enableZshIntegration = true;
   };
 
