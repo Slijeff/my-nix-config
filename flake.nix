@@ -113,15 +113,8 @@
             nix-homebrew = {
               # Install Homebrew under the default prefix
               enable = true;
-
-              # Apple Silicon Only: Also install Homebrew under the default Intel prefix for Rosetta 2
-              # enableRosetta = true;
-
               # User owning the Homebrew prefix
               user = "slijeff";
-
-              # Automatically migrate existing Homebrew installations
-              # autoMigrate = true;
 
             };
           }
@@ -130,7 +123,7 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.backupFileExtension = "backup";
-            home-manager.users.slijeff = import ./mac-slijeff.nix;
+            home-manager.users.slijeff = import ./home-manager/mac-slijeff.nix;
           }
         ];
       };
@@ -138,7 +131,7 @@
       #  cs527 vm
       homeConfigurations."jhui8" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
-        modules = [ ./vm-jhui8.nix ];
+        modules = [ ./home-manager/vm-jhui8.nix ];
       };
 
       # Expose the package set, including overlays, for convenience.
