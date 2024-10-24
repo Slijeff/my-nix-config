@@ -13,7 +13,6 @@
   # environment.
   home.packages = with pkgs; [
     uv
-    vim
     neovim
     zoxide
     btop
