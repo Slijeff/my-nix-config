@@ -12,14 +12,12 @@
   home.packages = with pkgs; [
     uv
     neovim
-    zoxide
     btop
     fastfetch
     lazygit
     wget
     pnpm
     devbox
-    fzf
     just
     gdu
     git

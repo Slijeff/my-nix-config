@@ -49,9 +49,6 @@
     ];
     casks = [
       "mac-mouse-fix"
-      "steam"
-      "wechat"
-      "notion"
       "wezterm"
       "google-chrome"
       "jordanbaird-ice"

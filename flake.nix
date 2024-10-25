@@ -39,7 +39,7 @@
       };
 
       #  cs527 vm, using standalone home-manager
-      homeConfigurations."jhui8" = home-manager.lib.homeManagerConfiguration {
+      homeConfigurations."cs527" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         modules = [ ./home-manager/vm-jhui8.nix ];
       };
