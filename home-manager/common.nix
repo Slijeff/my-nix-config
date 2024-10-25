@@ -23,9 +23,7 @@
     git
   ];
 
-  home.file = {
-
-  };
+  home.file = { };
   home.sessionVariables = {
     # EDITOR = "emacs";
   };
