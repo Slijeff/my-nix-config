@@ -1,13 +1,14 @@
 # common config for all Macs
-{ pkgs, inputs, ... }: {
-  environment.systemPackages = with pkgs;
-    [
-
-    ];
-  fonts.packages = with pkgs;
-    [
-      intel-one-mono
-    ];
+{
+  pkgs,
+  inputs,
+  ...
+}: {
+  environment.systemPackages = with pkgs; [
+  ];
+  fonts.packages = with pkgs; [
+    intel-one-mono
+  ];
 
   # Auto upgrade nix package and the daemon service.
   services.nix-daemon.enable = true;
