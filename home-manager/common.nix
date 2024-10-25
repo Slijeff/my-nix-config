@@ -44,7 +44,7 @@
     };
     oh-my-zsh = {
       enable = true;
-      theme = "cloud";
+      theme = "fino-time";
     };
   };
 
