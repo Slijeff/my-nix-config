@@ -11,7 +11,7 @@
     casks = [
       "steam"
       "wechat"
-      # "notion"
+      "notion"
     ];
   };
 }
