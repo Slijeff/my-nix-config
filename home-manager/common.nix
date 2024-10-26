@@ -22,6 +22,7 @@
     just
     gdu
     git
+    ripgrep
   ];
 
   home.file = {};
