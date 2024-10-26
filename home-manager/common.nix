@@ -26,7 +26,7 @@
 
   home.file = {};
   home.sessionVariables = {
-    # EDITOR = "emacs";
+    EDITOR = "nvim";
   };
 
   # Let Home Manager install and manage itself.
@@ -56,6 +56,8 @@
   programs.fzf = {
     enable = true;
     enableZshIntegration = true;
+    defaultOptions = [
+    ];
   };
 
   programs.git = {
@@ -78,5 +80,23 @@
       "--group-directories-first"
       "--long"
     ];
+  };
+
+  programs.bat = {
+    enable = true;
+  };
+
+  programs.yazi = {
+    enable = true;
+    enableZshIntegration = true;
+    settings = {
+      manager = {
+        ratio = [2 4 3];
+        show_hidden = true;
+      };
+      preview = {
+        ueberzug_scale = 1.5;
+      };
+    };
   };
 }
