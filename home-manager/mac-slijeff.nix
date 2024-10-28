@@ -5,7 +5,7 @@
   ...
 }: {
   home.file = {
-    ".wezterm.lua".source = wezterm/.wezterm.lua;
+    "/.config/wezterm/wezterm.lua".source = wezterm/.wezterm.lua;
   };
 
   imports = [

@@ -63,6 +63,7 @@
     ];
     masApps = {
       xnip = 1221250572;
+      bitwarden = 1352778147;
     };
     onActivation = {
       autoUpdate = true;
