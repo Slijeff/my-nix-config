@@ -17,7 +17,9 @@
     fastfetch
     lazygit
     wget
-    pnpm
+    # pnpm
+    nodejs_22
+    nodejs_22.pkgs.pnpm
     devbox
     just
     gdu
