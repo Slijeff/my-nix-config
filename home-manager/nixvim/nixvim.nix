@@ -17,11 +17,7 @@
       byteCompileLua.enable = true;
     };
 
-    colorschemes = {
-      catppuccin.enable = true;
-    };
-
-    plugins = {
+        plugins = {
       lualine = {
         enable = true;
       };
