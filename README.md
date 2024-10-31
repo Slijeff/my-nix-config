@@ -11,12 +11,16 @@ nix-channel --add https://github.com/nix-community/home-manager/archive/master.t
 nix-channel --update
 
 nix-shell '<home-manager>' -A install
+
+# remove default confi
+rm -rf ~/.config/home-manager
 ```
 
 Clone this repo:
 ```
 # if don't have git
 nix-shell -p git
+cd ~/.config
 git clone git@github.com:Slijeff/my-nix-config.git
 ```
 
