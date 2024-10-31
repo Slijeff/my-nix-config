@@ -2,7 +2,6 @@
 {
   config,
   pkgs,
-  nixvim,
   ...
 }: {
   imports = [

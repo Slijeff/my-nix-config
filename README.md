@@ -12,7 +12,7 @@ nix-channel --update
 
 nix-shell '<home-manager>' -A install
 
-# remove default confi
+# remove default config
 rm -rf ~/.config/home-manager
 ```
 
