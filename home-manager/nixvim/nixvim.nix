@@ -13,6 +13,19 @@
       lualine = {
         enable = true;
       };
+
+      lazygit = {
+        enable = true;
+      };
+
+      telescope = {
+        enable = true;
+        extensions = {
+          file-browser = {
+            enable = true;
+          };
+        };
+      };
     };
   };
 }
