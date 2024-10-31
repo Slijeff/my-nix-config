@@ -12,7 +12,6 @@
   # environment.
   home.packages = with pkgs; [
     uv
-    neovim
     btop
     fastfetch
     lazygit

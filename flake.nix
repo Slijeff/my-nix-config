@@ -8,6 +8,8 @@
     nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    nixvim.url = "github:nix-community/nixvim";
+    nixvim.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = inputs @ {
@@ -16,6 +18,7 @@
     nixpkgs,
     nix-homebrew,
     home-manager,
+    nixvim,
     ...
   }: {
     darwinConfigurations."Andromeda" = nix-darwin.lib.darwinSystem {
@@ -39,6 +42,9 @@
           home-manager.useUserPackages = true;
           home-manager.backupFileExtension = "backup";
           home-manager.users.slijeff = import ./home-manager/mac-slijeff.nix;
+          home-manager.extraSpecialArgs = {
+            inherit nixvim;
+          };
         }
       ];
     };
@@ -52,6 +58,9 @@
     #  wsl on my PC, using standalone home-manager
     homeConfigurations."wsl" = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages.x86_64-linux;
+      extraSpecialArgs = {
+        inherit nixvim;
+      };
       modules = [./home-manager/wsl.nix];
     };
 
