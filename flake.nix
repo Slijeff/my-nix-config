@@ -49,6 +49,12 @@
       modules = [./home-manager/vm-cs527.nix];
     };
 
+    #  wsl on my PC, using standalone home-manager
+    homeConfigurations."wsl" = home-manager.lib.homeManagerConfiguration {
+      pkgs = nixpkgs.legacyPackages.x86_64-linux;
+      modules = [./home-manager/wsl.nix];
+    };
+
     # Expose the package set, including overlays, for convenience.
     darwinPackages = self.darwinConfigurations."Andromeda".pkgs;
 
