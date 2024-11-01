@@ -23,7 +23,6 @@
       lualine = {
         enable = true;
       };
-
-          };
+    };
   };
 }

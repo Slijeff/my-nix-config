@@ -1,14 +1,14 @@
 {
-programs.nixvim = {
-plugins.telescope = {
-        enable = true;
-        extensions = {
-          file-browser = {
-            enable = true;
-          };
+  programs.nixvim = {
+    plugins.telescope = {
+      enable = true;
+      extensions = {
+        file-browser = {
+          enable = true;
         };
+      };
 
-        keymaps = {
+      keymaps = {
         # Find files using Telescope command-line sugar.
         "<leader>ff" = "find_files";
         "<leader>fg" = "live_grep";
@@ -20,10 +20,9 @@ plugins.telescope = {
         "<C-p>" = "git_files";
         "<leader>p" = "oldfiles";
         "<C-f>" = "live_grep";
+      };
 
-        };
-
-        settings.defaults = {
+      settings.defaults = {
         file_ignore_patterns = [
           "^.git/"
           "^.mypy_cache/"
@@ -34,6 +33,6 @@ plugins.telescope = {
         ];
         set_env.COLORTERM = "truecolor";
       };
-      };
-      };
+    };
+  };
 }

@@ -3,6 +3,7 @@
     ./barbar.nix
     ./neo-tree.nix
     ./telescope.nix
+    ./which-key.nix
   ];
 
   programs.nixvim = {
