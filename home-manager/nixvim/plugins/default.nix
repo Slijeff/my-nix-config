@@ -5,11 +5,23 @@
     ./telescope.nix
     ./which-key.nix
     ./treesitter.nix
+    ./floaterm.nix
   ];
 
   programs.nixvim = {
     colorschemes = {
-      catppuccin.enable = true;
+      catppuccin = {
+                enable = true;
+                settings = {
+                    integrations = {
+                        cmp = true;
+                        gitsigns = true;
+                        treesitter = true;
+                        leap = true;
+                        neotree = true;
+                    };
+                };
+            };
     };
 
     plugins = {
@@ -25,6 +37,16 @@
       };
       lazygit = {
         enable = true;
+        keymaps =[ 
+      {
+        mode = "n";
+        key = "<leader>gg";
+        action = "<cmd>LazyGit<cr>";
+        options.silent = true;
+        options.desc = "toggle lazygit"
+      }
+    ];
+;
       };
 
       nvim-autopairs.enable = true;

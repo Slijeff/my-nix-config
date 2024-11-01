@@ -21,6 +21,5 @@
       };
     };
 
-    hmts.enable = true;
   };
 }
