@@ -4,6 +4,7 @@
     ./neo-tree.nix
     ./telescope.nix
     ./which-key.nix
+    ./treesitter.nix
   ];
 
   programs.nixvim = {
@@ -13,6 +14,7 @@
 
     plugins = {
       web-devicons.enable = true;
+      leap.enable = true;
 
       gitsigns = {
         enable = true;
