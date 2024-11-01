@@ -2,6 +2,7 @@
   imports = [
     ./barbar.nix
     ./neo-tree.nix
+    ./telescope.nix
   ];
 
   programs.nixvim = {
