@@ -4,6 +4,7 @@
     ./plugins
     ./options.nix
     ./keymappings.nix
+    ./completion.nix
   ];
   programs.nixvim = {
     enable = true;
