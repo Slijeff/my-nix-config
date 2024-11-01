@@ -1,6 +1,7 @@
 {
   imports = [
     ./barbar.nix
+    ./lsp.nix
     ./lazygit.nix
     ./neo-tree.nix
     ./telescope.nix
@@ -36,7 +37,7 @@
           change.text = "~";
         };
       };
-            nvim-autopairs.enable = true;
+      nvim-autopairs.enable = true;
       oil.enable = true;
     };
   };
