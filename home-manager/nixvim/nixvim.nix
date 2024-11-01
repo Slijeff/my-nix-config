@@ -3,6 +3,7 @@
     nixvim.homeManagerModules.nixvim
     ./plugins
     ./options.nix
+    ./keymappings.nix
   ];
   programs.nixvim = {
     enable = true;
