@@ -1,6 +1,7 @@
 {nixvim, ...}: {
   imports = [
     nixvim.homeManagerModules.nixvim
+    ./plugins
     ./options.nix
   ];
   programs.nixvim = {
@@ -17,12 +18,8 @@
       byteCompileLua.enable = true;
     };
 
-        plugins = {
+    plugins = {
       lualine = {
-        enable = true;
-      };
-
-      lazygit = {
         enable = true;
       };
 
