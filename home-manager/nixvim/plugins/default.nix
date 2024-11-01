@@ -1,6 +1,7 @@
 {
   imports = [
     ./barbar.nix
+    ./lazygit.nix
     ./neo-tree.nix
     ./telescope.nix
     ./which-key.nix
@@ -11,17 +12,17 @@
   programs.nixvim = {
     colorschemes = {
       catppuccin = {
-                enable = true;
-                settings = {
-                    integrations = {
-                        cmp = true;
-                        gitsigns = true;
-                        treesitter = true;
-                        leap = true;
-                        neotree = true;
-                    };
-                };
-            };
+        enable = true;
+        settings = {
+          integrations = {
+            cmp = true;
+            gitsigns = true;
+            treesitter = true;
+            leap = true;
+            neotree = true;
+          };
+        };
+      };
     };
 
     plugins = {
@@ -35,21 +36,7 @@
           change.text = "~";
         };
       };
-      lazygit = {
-        enable = true;
-        keymaps =[ 
-      {
-        mode = "n";
-        key = "<leader>gg";
-        action = "<cmd>LazyGit<cr>";
-        options.silent = true;
-        options.desc = "toggle lazygit"
-      }
-    ];
-;
-      };
-
-      nvim-autopairs.enable = true;
+            nvim-autopairs.enable = true;
       oil.enable = true;
     };
   };
