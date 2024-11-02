@@ -32,6 +32,7 @@
       termguicolors = true; # Enables 24-bit RGB color in the |TUI|
       spell = false; # Highlight spelling mistakes (local to window)
       wrap = false; # Prevent text from wrapping
+      clipboard = "unnamed"; # copy using the system clipboard
 
       # Tab options
       tabstop = 2; # Number of spaces a <Tab> in the text stands for (local to buffer)

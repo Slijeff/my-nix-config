@@ -15,6 +15,7 @@
         "<leader>b" = "buffers";
         "<leader>fh" = "help_tags";
         "<leader>fd" = "diagnostics";
+        "<leader>fk" = "which_key";
 
         # FZF like bindings
         "<C-p>" = "git_files";

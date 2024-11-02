@@ -1,6 +1,7 @@
 {
   imports = [
     ./barbar.nix
+    ./comment.nix
     ./lsp.nix
     ./lazygit.nix
     ./neo-tree.nix

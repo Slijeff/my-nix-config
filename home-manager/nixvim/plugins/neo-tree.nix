@@ -12,6 +12,13 @@
     plugins.neo-tree = {
       enable = true;
 
+      filesystem = {
+        filteredItems = {
+          hideDotfiles = false;
+          visible = true; # enabled means all "hide" are dimmed
+        };
+      };
+
       closeIfLastWindow = true;
       window = {
         width = 30;
