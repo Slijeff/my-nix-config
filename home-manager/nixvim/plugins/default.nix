@@ -1,5 +1,6 @@
 {
   imports = [
+    ./nvim-surround.nix
     ./barbar.nix
     ./comment.nix
     ./lsp.nix
