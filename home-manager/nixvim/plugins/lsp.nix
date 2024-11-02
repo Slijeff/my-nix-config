@@ -29,7 +29,11 @@
 
         servers = {
           nixd.enable = true;
-          pyright.enable = true;
+          pylsp = {
+            enable = true;
+            settings = {
+            };
+          };
         };
       };
     };
