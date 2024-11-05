@@ -12,9 +12,11 @@
 
     performance = {
       combinePlugins = {
-        enable = true;
+        enable = false;
         standalonePlugins = [
           "nvim-treesitter"
+          "conform-nvim"
+          "oil"
         ];
       };
       byteCompileLua.enable = true;

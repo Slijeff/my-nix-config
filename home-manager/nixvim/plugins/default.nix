@@ -1,5 +1,6 @@
 {
   imports = [
+    ./indent-blankline.nix
     ./nvim-surround.nix
     ./conform.nix
     ./barbar.nix

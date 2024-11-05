@@ -12,6 +12,7 @@
   # environment.
   home.packages = with pkgs; [
     uv
+    yamlfix
     btop
     fastfetch
     lazygit
