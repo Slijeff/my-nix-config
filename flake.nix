@@ -52,6 +52,9 @@
     #  cs527 vm, using standalone home-manager
     homeConfigurations."cs527" = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages.x86_64-linux;
+      mextraSpecialArgs = {
+        inherit nixvim;
+      };
       modules = [./home-manager/vm-cs527.nix];
     };
 
