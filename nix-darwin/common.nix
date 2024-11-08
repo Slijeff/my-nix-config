@@ -60,6 +60,7 @@
       "visual-studio-code"
       "zoom"
       "slack"
+      "aerospace"
     ];
     taps = [
       "nikitabobko/homebrew-tap"
