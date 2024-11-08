@@ -61,6 +61,9 @@
       "zoom"
       "slack"
     ];
+    taps = [
+      "nikitabobko/homebrew-tap"
+    ];
     masApps = {
       xnip = 1221250572;
       bitwarden = 1352778147;
