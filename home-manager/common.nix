@@ -31,6 +31,11 @@
   home.sessionVariables = {
     EDITOR = "nvim";
   };
+  
+  home.sessionPaths = [
+    "/opt/homebrew/sbin/"
+    "/opt/homebrew/bin/"
+  ];
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
