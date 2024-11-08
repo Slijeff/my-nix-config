@@ -32,7 +32,7 @@
     EDITOR = "nvim";
   };
   
-  home.sessionPaths = [
+  home.sessionPath = [
     "/opt/homebrew/sbin/"
     "/opt/homebrew/bin/"
   ];
