@@ -31,7 +31,7 @@
   home.sessionVariables = {
     EDITOR = "nvim";
   };
-  
+
   home.sessionPath = [
     "/opt/homebrew/sbin/"
     "/opt/homebrew/bin/"

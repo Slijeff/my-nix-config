@@ -1,6 +1,4 @@
 {
-  # Collection of various small independent plugins/modules
-  # https://nix-community.github.io/nixvim/plugins/mini.html
   programs.nixvim = {
     keymaps = [
       {
@@ -11,9 +9,9 @@
         options.desc = "leap";
       }
     ];
-    plugins.leap= {
+    plugins.leap = {
       enable = true;
-      addDefaultMapping = false;
+      addDefaultMappings = false;
     };
   };
 }
