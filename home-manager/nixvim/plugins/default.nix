@@ -1,5 +1,6 @@
 {
   imports = [
+    ./leap.nix
     ./mini.nix
     ./indent-blankline.nix
     ./nvim-surround.nix

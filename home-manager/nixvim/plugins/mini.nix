@@ -28,7 +28,7 @@
       animate = {};
 
       # should be able to replace leap.nvim
-      jump2d = {};
+      # jump2d = {};
     };
   };
 }
