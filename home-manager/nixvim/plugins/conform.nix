@@ -31,7 +31,7 @@
             command = pkgs.lib.getExe pkgs.python3Packages.isort;
           };
           yamlfix = {
-            command = pkgs.lib.getExe pkgs.yamlfix;
+            command = pkgs.lib.getExe' pkgs.yamlfix "yamlfix";
             env = {
               YAMLFIX_EXPLICIT_START = "false";
               YAMLFIX_SEQUENCE_STYLE = "block_style";
