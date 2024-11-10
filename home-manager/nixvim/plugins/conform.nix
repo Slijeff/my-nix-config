@@ -1,4 +1,8 @@
-{config, ...}: {
+{
+  config,
+  pkgs,
+  ...
+}: {
   programs.nixvim = {
     keymaps = [
       {
@@ -17,9 +21,17 @@
       settings = {
         formatters_by_ft = {
           yaml = ["yamlfix"];
+          python = ["isort" "black"];
         };
         formatters = {
+          black = {
+            command = pkgs.lib.getExe pkgs.python3Packages.black;
+          };
+          isort = {
+            command = pkgs.lib.getExe pkgs.python3Packages.isort;
+          };
           yamlfix = {
+            command = pkgs.lib.getExe pkgs.yamlfix;
             env = {
               YAMLFIX_EXPLICIT_START = "false";
               YAMLFIX_SEQUENCE_STYLE = "block_style";

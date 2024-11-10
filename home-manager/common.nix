@@ -12,12 +12,10 @@
   # environment.
   home.packages = with pkgs; [
     uv
-    yamlfix
     btop
     fastfetch
     lazygit
     wget
-    # pnpm
     nodejs_22
     nodejs_22.pkgs.pnpm
     devbox
