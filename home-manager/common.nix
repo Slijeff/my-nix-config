@@ -43,6 +43,7 @@
     shellAliases = {
       switch = "darwin-rebuild switch --flake ~/nix-config/";
       ee = "eza";
+      cat = "bat";
     };
     enableCompletion = true;
     autosuggestion = {
