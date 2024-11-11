@@ -21,6 +21,7 @@
       catppuccin = {
         enable = true;
         settings = {
+          transparent_background = true;
           integrations = {
             cmp = true;
             gitsigns = true;
