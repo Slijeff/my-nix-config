@@ -16,7 +16,6 @@
             path = "[path]";
             luasnip = "[snip]";
             buffer = "[buffer]";
-            neorg = "[neorg]";
             nixpkgs_maintainers = "[nixpkgs]";
           };
         };
@@ -38,6 +37,9 @@
             "<Tab>" = "cmp.mapping.confirm({ select = true })";
           };
 
+          window.completion.border = ["╭" "─" "╮" "│" "╯" "─" "╰" "│"];
+          window.documentation.border = ["╭" "─" "╮" "│" "╯" "─" "╰" "│"];
+
           sources = [
             {name = "path";}
             {name = "nvim_lsp";}
@@ -47,7 +49,6 @@
               # Words from other open buffers can also be suggested.
               option.get_bufnrs.__raw = "vim.api.nvim_list_bufs";
             }
-            {name = "neorg";}
             {name = "nixpkgs_maintainers";}
           ];
         };
