@@ -17,12 +17,14 @@
           hideDotfiles = false;
           visible = true; # enabled means all "hide" are dimmed
         };
+        useLibuvFileWatcher = true;
+        followCurrentFile.enabled = true;
       };
 
       closeIfLastWindow = true;
       window = {
         width = 30;
-        autoExpandWidth = true;
+        autoExpandWidth = false;
       };
     };
   };

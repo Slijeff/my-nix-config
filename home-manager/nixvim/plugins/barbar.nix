@@ -6,5 +6,15 @@
       previous.key = "<S-TAB>";
       close.key = "<leader>bd";
     };
+    settings = {
+      sidebar_filetypes = {
+        # neotree = {
+        #   text = "Neo-tree";
+        # };
+        neo-tree = {
+          event = "BufWipeout";
+        };
+      };
+    };
   };
 }
