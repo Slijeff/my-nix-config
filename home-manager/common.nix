@@ -53,6 +53,9 @@
       enable = true;
       theme = "fino-time";
     };
+    initExtra = ''
+      eval $(just --completions zsh)
+    '';
   };
 
   programs.zoxide = {
