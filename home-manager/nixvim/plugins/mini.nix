@@ -21,14 +21,16 @@
       #  - saiw) - [S]urround [A]dd [I]nner [W]ord [)]Paren
       #  - sd'   - [S]urround [D]elete [']quotes
       #  - sr)'  - [S]urround [R]eplace [)] [']
-      surround = {
+      # surround = {
+      # };
+
+      trailspace = {
       };
 
       # smooth scrolling and smooth mouse
       animate = {};
 
-      # should be able to replace leap.nvim
-      # jump2d = {};
+      cursorword = {};
     };
   };
 }
