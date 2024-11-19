@@ -12,6 +12,7 @@
       "steam"
       "wechat"
       "notion"
+      "ente-auth"
     ];
   };
 }
