@@ -10,7 +10,7 @@
   ];
   home.file = {
     "/.config/wezterm/wezterm.lua".source = wezterm/.wezterm.lua;
-    # "/.config/aerospace/aerospace.toml".source = aerospace/aerospace.toml;
-    "/.config/aerospace/aerospace.toml".source = aerospace/default-config.toml;
+    "/.config/aerospace/aerospace.toml".source = aerospace/aerospace.toml;
+    # "/.config/aerospace/aerospace.toml".source = aerospace/default-config.toml;
   };
 }
