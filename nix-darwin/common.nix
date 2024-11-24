@@ -61,6 +61,7 @@
       "zoom"
       "slack"
       "aerospace"
+      "betterdisplay"
     ];
     taps = [
       "nikitabobko/homebrew-tap"
