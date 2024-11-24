@@ -34,6 +34,7 @@
   system.defaults = {
     dock.autohide = true;
     dock.mru-spaces = false;
+    dock.expose-group-by-app = true;
     finder.AppleShowAllExtensions = true;
     finder.AppleShowAllFiles = true;
     finder.ShowPathbar = true;
@@ -41,6 +42,7 @@
     finder._FXShowPosixPathInTitle = true;
     loginwindow.LoginwindowText = "Welcome Back";
     screensaver.askForPasswordDelay = 10;
+    spaces.spans-displays = false;
   };
 
   homebrew = {
