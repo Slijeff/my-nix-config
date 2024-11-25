@@ -8,6 +8,9 @@
   ];
 
   homebrew = {
+    brews = [
+      "asitop"
+    ];
     casks = [
       "steam"
       "wechat"
