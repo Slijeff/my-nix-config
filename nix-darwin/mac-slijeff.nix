@@ -17,5 +17,8 @@
       "notion"
       "ente-auth"
     ];
+    masApps = {
+      oneDrive = 823766827;
+    };
   };
 }
