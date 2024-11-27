@@ -10,6 +10,8 @@
   homebrew = {
     brews = [
       "asitop"
+      "yt-dlp"
+      "ffmpeg"
     ];
     casks = [
       "steam"
