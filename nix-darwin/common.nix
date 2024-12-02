@@ -34,7 +34,7 @@
   system.defaults = {
     dock.autohide = true;
     dock.mru-spaces = false;
-    dock.expose-group-by-app = true;
+    dock.expose-group-apps = true;
     finder.AppleShowAllExtensions = true;
     finder.AppleShowAllFiles = true;
     finder.ShowPathbar = true;
