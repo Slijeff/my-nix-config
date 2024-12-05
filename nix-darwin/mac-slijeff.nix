@@ -14,6 +14,7 @@
       "ffmpeg"
     ];
     casks = [
+      "pearcleaner"
       "steam"
       "wechat"
       "notion"
