@@ -15,6 +15,7 @@
     ];
     casks = [
       "pearcleaner"
+      "parsec"
       "steam"
       "wechat"
       "notion"
