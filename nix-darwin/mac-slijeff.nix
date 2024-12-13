@@ -14,6 +14,7 @@
       "ffmpeg"
     ];
     casks = [
+      "input-source-pro"
       "pearcleaner"
       "parsec"
       "steam"
