@@ -14,6 +14,7 @@
       "ffmpeg"
     ];
     casks = [
+      # "logi-options+"
       "pearcleaner"
       "parsec"
       "steam"
