@@ -12,9 +12,13 @@
       "asitop"
       "yt-dlp"
       "ffmpeg"
+      "gromgit/fuse/ntfs-3g-mac"
     ];
     casks = [
       # "logi-options+"
+      # "ntfstool"
+      "macfuse"
+      "mounty"
       "pearcleaner"
       "parsec"
       "steam"
