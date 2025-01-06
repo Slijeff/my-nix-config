@@ -51,7 +51,7 @@
       "libomp"
     ];
     casks = [
-      "mac-mouse-fix"
+      "mos"
       "wezterm"
       "google-chrome"
       "jordanbaird-ice"
@@ -64,6 +64,7 @@
       "slack"
       "aerospace"
       "betterdisplay"
+      "windsurf"
     ];
     taps = [
       "nikitabobko/homebrew-tap"
