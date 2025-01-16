@@ -99,10 +99,19 @@
   programs.yazi = {
     enable = true;
     enableZshIntegration = true;
+    theme = {
+      flavor = {
+        light = "catppuccin-latte";
+        dark = "catppuccin-mocha";
+      };
+    };
+
     settings = {
       manager = {
         ratio = [2 4 3];
         show_hidden = true;
+        sort_dir_first = true;
+        linemode = "size";
       };
       preview = {
         ueberzug_scale = 1.5;
