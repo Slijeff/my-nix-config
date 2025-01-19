@@ -8,7 +8,7 @@
 
       title = "";
 
-      keymaps_toggle = "<leader>,";
+      keymap_toggle = "<leader>,";
     };
   };
 }

@@ -1,8 +1,5 @@
+{ config, pkgs, ... }:
 {
-  config,
-  pkgs,
-  ...
-}: {
   # You should not change this value, even if you update Home Manager. If you do
   # want to update the value, then make sure to first check the Home Manager
   # release notes.
@@ -25,7 +22,7 @@
     ripgrep
   ];
 
-  home.file = {};
+  home.file = { };
   home.sessionVariables = {
     EDITOR = "nvim";
   };
@@ -66,8 +63,7 @@
   programs.fzf = {
     enable = true;
     enableZshIntegration = true;
-    defaultOptions = [
-    ];
+    defaultOptions = [ ];
   };
 
   programs.git = {
@@ -108,7 +104,11 @@
 
     settings = {
       manager = {
-        ratio = [2 4 3];
+        ratio = [
+          2
+          4
+          3
+        ];
         show_hidden = true;
         sort_dir_first = true;
         linemode = "size";
@@ -122,5 +122,35 @@
   programs.direnv = {
     enable = true;
     enableZshIntegration = true;
+  };
+
+  programs.helix = {
+    enable = true;
+    settings = {
+      theme = "catppuccin_frappe";
+      editor = {
+        true-color = true;
+        bufferline = "always";
+        cursorline = true;
+        lsp = {
+          display-messages = true;
+        };
+      };
+    };
+    languages = {
+      language-server = {
+        nixd = {
+          command = "${pkgs.nixd}/bin/nixd";
+        };
+      };
+      language = [
+        {
+          name = "nix";
+          auto-format = true;
+          language-servers = [ "nixd" ];
+          formatter.command = "${pkgs.nixfmt-rfc-style}/bin/nixfmt";
+        }
+      ];
+    };
   };
 }
