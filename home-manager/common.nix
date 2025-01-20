@@ -136,6 +136,24 @@
           display-messages = true;
         };
       };
+      keys = {
+        normal = {
+          space.g = [
+            ":write-all"
+            ":new"
+            ":insert-output lazygit"
+            ":set mouse false" # First disable mouse to hint helix into activating it
+            ":set mouse true"
+            ":buffer-close!"
+            ":redraw"
+            ":reload-all"
+          ];
+          esc = [
+            "collapse_selection"
+            "keep_primary_selection"
+          ];
+        };
+      };
     };
     languages = {
       language-server = {
