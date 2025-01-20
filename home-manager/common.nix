@@ -126,8 +126,14 @@
 
   programs.helix = {
     enable = true;
+    themes = {
+      catppuccin_frappe_trans = {
+        inherits = "catppuccin_frappe";
+        "ui.background" = { };
+      };
+    };
     settings = {
-      theme = "catppuccin_frappe";
+      theme = "catppuccin_frappe_trans";
       editor = {
         true-color = true;
         bufferline = "always";
