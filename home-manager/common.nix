@@ -142,6 +142,12 @@
         nixd = {
           command = "${pkgs.nixd}/bin/nixd";
         };
+        typescript-language-server = with pkgs.nodePackages; {
+          command = "${typescript-language-server}/bin/typescript-language-server";
+          args = [
+            "--stdio"
+          ];
+        };
       };
       language = [
         {
@@ -149,6 +155,10 @@
           auto-format = true;
           language-servers = [ "nixd" ];
           formatter.command = "${pkgs.nixfmt-rfc-style}/bin/nixfmt";
+        }
+        {
+          name = "typescript";
+          language-servers = [ "typescript-language-server" ];
         }
       ];
     };
