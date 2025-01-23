@@ -172,6 +172,10 @@
             "--stdio"
           ];
         };
+        marksman = {
+          command = "${pkgs.marksman}/bin/marksman";
+          args = [ "server" ];
+        };
       };
       language = [
         {
@@ -183,6 +187,10 @@
         {
           name = "typescript";
           language-servers = [ "typescript-language-server" ];
+        }
+        {
+          name = "markdown";
+          language-servers = [ "marksman" ];
         }
       ];
     };
