@@ -26,6 +26,7 @@
       "wechat"
       "notion"
       "ente-auth"
+      "zed@preview"
     ];
     masApps = {
       oneDrive = 823766827;

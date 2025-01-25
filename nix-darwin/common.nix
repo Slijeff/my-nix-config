@@ -3,7 +3,8 @@
   pkgs,
   inputs,
   ...
-}: {
+}:
+{
   environment.systemPackages = with pkgs; [
   ];
   fonts.packages = with pkgs; [
@@ -64,7 +65,6 @@
       "slack"
       "aerospace"
       "betterdisplay"
-      "windsurf"
     ];
     taps = [
       "nikitabobko/homebrew-tap"
