@@ -18,6 +18,7 @@
     casks = [
       # "logi-options+"
       # "ntfstool"
+      "whisky"
       "macfuse"
       "mounty"
       "pearcleaner"
