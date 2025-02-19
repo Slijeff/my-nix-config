@@ -39,6 +39,7 @@
     enable = true;
     shellAliases = {
       switch = "darwin-rebuild switch --flake ~/nix-config/";
+      ft = "docker compose run --rm freqtrade";
       ee = "eza";
       cat = "bat";
     };
