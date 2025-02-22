@@ -4,7 +4,6 @@
   ...
 }: {
   imports = [
-    ./nixvim/nixvim.nix
     ./common.nix
   ];
 

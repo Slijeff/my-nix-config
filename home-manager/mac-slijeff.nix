@@ -5,7 +5,6 @@
   ...
 }: {
   imports = [
-    ./nixvim/nixvim.nix
     ./common.nix
   ];
   home.file = {
