@@ -27,7 +27,8 @@
   nixpkgs.hostPlatform = "aarch64-darwin";
 
   # Allow fingerprint for password
-  security.pam.enableSudoTouchIdAuth = true;
+  security.pam.services.sudo_local.touchIdAuth = true;
+  # security.pam.enableSudoTouchIdAuth = true;
 
   users.users.slijeff.home = "/Users/slijeff";
 
@@ -49,6 +50,7 @@
     enable = true;
     brews = [
       "libomp"
+      "neovim"
     ];
     casks = [
       "mos"
