@@ -18,6 +18,7 @@
     casks = [
       # "logi-options+"
       # "ntfstool"
+      "tailscale"
       "whisky"
       "macfuse"
       "mounty"
