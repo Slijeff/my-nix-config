@@ -54,6 +54,7 @@
     ];
     casks = [
       "mos"
+      "brave-browser"
       "wezterm"
       "google-chrome"
       "jordanbaird-ice"

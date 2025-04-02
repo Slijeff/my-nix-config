@@ -9,6 +9,7 @@
   # environment.
   home.packages = with pkgs; [
     uv
+    zulu8
     btop
     fastfetch
     lazygit

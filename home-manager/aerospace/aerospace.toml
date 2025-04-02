@@ -228,5 +228,10 @@ run = "move-node-to-workspace M"
 if.app-id = 'NULL-APP-BUNDLE-ID'
 run = "layout floating"
 
+[[on-window-detected]]
+if.app-id = 'com.ccpgames.eveonline'
+run = 'layout floating'
 
-
+[[on-window-detected]]
+if.app-id = 'com.ccpgames.eve-online-launcher'
+run = 'layout floating'
