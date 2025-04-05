@@ -46,42 +46,6 @@
     spaces.spans-displays = false;
   };
 
-  homebrew = {
-    enable = true;
-    brews = [
-      "libomp"
-      "neovim"
-    ];
-    casks = [
-      "pearcleaner"
-      "mos"
-      "brave-browser"
-      "wezterm"
-      "google-chrome"
-      "jordanbaird-ice"
-      "itsycal"
-      "stats"
-      "orbstack"
-      "maccy"
-      "visual-studio-code"
-      "zoom"
-      "slack"
-      "aerospace"
-      "betterdisplay"
-    ];
-    taps = [
-      "nikitabobko/homebrew-tap"
-    ];
-    masApps = {
-      xnip = 1221250572;
-      bitwarden = 1352778147;
-    };
-    onActivation = {
-      autoUpdate = true;
-      upgrade = true;
-      cleanup = "zap";
-    };
-  };
 
   nix = {
     settings = {
