@@ -53,6 +53,7 @@
       "neovim"
     ];
     casks = [
+      "pearcleaner"
       "mos"
       "brave-browser"
       "wezterm"
