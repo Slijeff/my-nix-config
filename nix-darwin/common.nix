@@ -31,7 +31,7 @@
   # security.pam.enableSudoTouchIdAuth = true;
 
   users.users.slijeff.home = "/Users/slijeff";
-
+  system.primaryUser = "slijeff";
   system.defaults = {
     dock.autohide = true;
     dock.mru-spaces = false;
