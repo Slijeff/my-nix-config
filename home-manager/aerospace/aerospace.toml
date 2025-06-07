@@ -239,3 +239,7 @@ run = 'layout floating'
 [[on-window-detected]]
 if.app-id = 'com.ccpgames.eve-online-launcher'
 run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.hguandl.MeoAsstMac'
+run = 'layout floating'
