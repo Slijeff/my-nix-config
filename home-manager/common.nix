@@ -31,6 +31,7 @@
   home.sessionPath = [
     "/opt/homebrew/sbin/"
     "/opt/homebrew/bin/"
+    "/Users/slijeff/.local/bin/"
   ];
 
   # Let Home Manager install and manage itself.
