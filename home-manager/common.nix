@@ -53,7 +53,7 @@
       enable = true;
       theme = "fino-time";
     };
-    initExtra = ''
+    initContent = ''
       eval $(just --completions zsh)
     '';
   };
